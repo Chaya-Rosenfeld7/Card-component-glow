@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font: var(--text);
+}
+
+:root {
+    --text:"Outfit", "sans-serif" ;
+    --color-fondo-carta: hsl(216, 50%, 16%);
+    --color-texto-claro: hsl(215, 51%, 70%);
+    --color-neon: hsl(178, 100%, 50%);
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(217, 54%, 11%);
+    color: var(--color-texto-claro);
+}
+.contenedor-principal {
+    width: 300px;
+    height: 500px;
+    background-color: var(--color-fondo-carta);
+    border-radius: 20px;
+    padding: 20px;
+    font-family: var(--text);
+}
+.contenedor-foto {
+    position: relative;
+}
+.foto{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.view-contenedor  {
+    position: absolute;
+    background-color: hsl(178, 100%, 50%, 60%);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.view-contenedor:hover {
+    opacity: 1;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.view {
+    margin: 100px;
+}
+.contenedor-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+
+}
+h1 {
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 15px 0px 15px 0px;
+}
+p {
+    color: var(--color-texto-claro);
+    font-weight: 300;
+    font-size: 15px;
+    
+}
+.info {
+    display: flex;
+    gap: 70px;
+    margin: 15px 0px 15px 0px;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    padding-bottom: 15px;
+}
+.eth {
+    display: flex;
+    align-items: center;
+    color: var(--color-neon);
+    font-weight: 400;
+    font-size: 15px;
+    gap: 7px;
+}
+.tiempo {
+    color: var(--color-texto-claro);
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 15px;
+    gap: 7px;
+}
+.contenedor-autor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.foto-autor {
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 50px;
+    margin-right: 15px;
+}
+span {
+    color: white;
+    margin-left: 5px;
+    
+}
+
+h1, span {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+h1:hover, span:hover {
+    color: hsl(178, 100%, 50%);
+}
